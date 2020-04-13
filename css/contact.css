@@ -1,0 +1,136 @@
+body {
+    max-width: 1400px;
+    margin: 0;
+    padding: 0;
+    background-color: #d4ebf1;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 8px 8px 8px #a8ced7;
+}
+
+h1 {
+    font-size:  1.2em;
+    text-transform: uppercase;
+}
+
+form , section {
+    width: 80%;
+    margin: 2% auto;
+    background-color: #5bd0e7;
+    text-align: center;
+    border: 1px solid #5bd0e7;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+    width: 90%;
+    margin: auto;
+}
+.encadre {
+    
+        display: inline-block;
+        height: 6VH;
+        padding: 0 30%;
+       margin-top: 0;
+        line-height: 6vh;/* pour centree le texte dans la back*/
+        background-color: #002730;
+        color: white;
+        position: relative;
+        font-size: 1em;
+}
+    
+.encadre::after {
+        content: "";
+        position: absolute;
+        top: 0; right: -16px;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-top: 6VH solid #002730;
+        border-right: 16px solid transparent;
+    
+}
+.encadre::before {
+        content: "";
+        position: absolute;
+        top: 0; left: -16px;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-bottom: 6VH solid #002730;
+        border-left: 16px solid transparent;
+      
+}
+
+form .div1 {
+    display: inline-block;
+    vertical-align: 50%;
+    width: 70%;
+    margin: 1% auto;
+    text-align: left;
+}
+form .div2 {
+    text-align: left;
+    display: inline-block;
+    vertical-align: 50%;
+    width: 29%;
+    margin: 1% auto;
+}
+
+ label {
+    display: block;
+}
+
+input {
+    height: 40px;
+    width: 92%;
+    color: grey;
+    font-size: .9em;
+}
+
+textarea {
+    width: 90%;
+}
+
+input[type="submit"] {
+    color: #fff;
+    background-color: #002730;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+p {
+    padding: 2%;
+}
+
+/***** RESPONSIVE ******/
+@media screen and (max-width:799px) {
+    main {
+        width: 95%;
+    }
+
+    .encadre {
+        font-size: 0.6em;
+        padding: 0 27%;
+    }
+    form .div2 { 
+        width: 70%;
+    }
+    input[type="submit"] {
+        width: 93%;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width: 1099px) {
+    .encadre {
+        font-size: 0.8em;
+    }
+}
