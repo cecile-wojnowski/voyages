@@ -1,3 +1,12 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+/*FONT*/
+
+
+*{
+    box-sizing: border-box;
+}
+
 body {
     max-width: 1400px;
     margin: 0;
@@ -17,7 +26,7 @@ h1 {
     text-transform: uppercase;
 }
 
-form , section {
+form , .section {
     width: 80%;
     margin: 2% auto;
     background-color: #5bd0e7;
@@ -134,3 +143,127 @@ p {
         font-size: 0.8em;
     }
 }
+
+/****** FOOTER *****/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: teal;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+footer a:hover{
+    transform: scale(1.4);
+    transition: 0.5s;
+    color: white;
+}
+footer section{
+    width: 30%;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    color:black   
+}
+
+#icon1:before{
+    content: "f";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;   
+
+}
+
+#icon2:before{
+    content: "i";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+#icon3:before{
+    content: "t";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon4:before{
+    content: "y";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon5:before{
+    content: "p";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+.socialicons{
+    padding:5%;
+}
+.socialicons:hover{
+    color: white;
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+.title-footer{
+    text-align: center;
+}
+.destination a{
+    padding: 5%;
+}
+.destination{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 40%;
+    
+}
+.subdestination{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.sublink{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 30%;
+}
+
+.sublink a{
+    width: 100%;
+}
+
+.contactus a{
+    padding: 5%;
+    margin-top: 1em;
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;  
+}
+
+
