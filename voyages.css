@@ -7,12 +7,12 @@
 header{
 	border-bottom:solid 1px grey;
 	font-family: 'Playfair Display', serif;
+	padding:5%;
 }
 .header_nav{
 	display:flex;
 	flex-direction:row;
 	justify-content: space-around;
-	padding:5%;
 }
 .header_ul{
 	display:table;
@@ -47,3 +47,4 @@ header{
 .sous_lien{
 	color:grey;
 }
+
