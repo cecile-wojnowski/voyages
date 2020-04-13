@@ -9,9 +9,16 @@
 body{
     margin: 0;
     padding:0;
+    height: 100vh;
+    width: auto;
 }
 
 /*MAIN*/
+.first-section{
+    height: 20%;
+    width: 80%;
+}
+
 
 
 /*FOOTER*/
