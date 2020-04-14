@@ -1,5 +1,7 @@
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*FONT*/
 
 
@@ -21,12 +23,215 @@ body{
 main{
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+main h1, h2, h3{
+    text-align: center;
+}
+.first-section img{
+    height: 20%;
+    width:  100%;
+    padding: 2%;
+}
+.big-container{
+    display: flex;
+    flex-direction: column;
+    
     
 }
-.first-section{
-    height: 20%;
-    width: 80%;
+.top5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0 5%;
+    padding: 2%;
+    font-size: 16px;
+    line-height: 26px;
+    
 }
+.picture{
+    width: 45%;
+}
+.description{
+    width: 45%;
+}
+
+/*CARD*/
+
+.culinary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1em;
+    height: 60vh;
+    width: 100%;
+    
+}
+.card{
+    width: 30vw;
+    height:50vh;
+    box-shadow: 7px 0px 17px 5px rgba(0,0,0,0.51);
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.card h3, h4, p{
+    margin: 0;
+}
+.card:hover .inside, .card.hover .inside{
+    transform: rotateY(180deg);
+}
+
+.card-front{
+    z-index: 2;
+    transform: rotateY(0deg);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+   
+}
+.card-back{
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    
+    
+}
+
+   
+.inside{
+    transition: 1s;
+    transform-style: preserve-3d;
+    
+    
+}
+.card img{
+    width: 100%;
+    height: 40vh;
+    
+}
+.paragraph{
+    height: 50vh;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.paragraph p{
+    width: 80%;
+    text-align: center;
+}
+.card-sub{
+    margin: 0;
+    padding:0 2%;
+    text-align: center;
+    font-style: italic;
+    color: orange;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(8, 
+   1fr);
+    grid-template-rows: repeat(8, 5vw
+    );
+    grid-gap: 2px;
+    margin: 2%;
+    
+    
+}
+.gallery figure{
+    margin:0;
+    padding: 0;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+       
+}
+.gallery img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.first-picture{
+    grid-row-start: 1 ;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+#img-1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start:3 ;
+    grid-column-end: 5;
+}
+#img-2{
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+#img-3{
+    grid-row-start: 7;
+    grid-row-end: 9;
+    grid-column-start:3 ;
+    grid-column-end: 5;
+}
+#img-4{
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start:7;
+    grid-column-end:9;
+}
+ 
+#img-5{
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start:5 ;
+    grid-column-end: 7;
+
+}    
+.follow{
+    background: black;
+    color: white;
+    font-weight: 1em;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start:5 ;
+    grid-column-end: 7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.follow:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+#insta-icon::before{
+    content: "i";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    padding: 2% 3%;
+    border-radius: 3px;
+}
+
+#insta-icon{
+    padding-top: 1em;
+        
+}
+
 
 
 
