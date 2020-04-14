@@ -4,6 +4,142 @@
 	text-decoration: none;
 	list-style-type: none;
 }
-img {
-	width:70%;
+/***** Header *****/
+header{
+	border-bottom:solid 1px grey;
+	font-family: 'Playfair Display', serif;
+	padding:5%;
+	background-color: transparent;
+}
+.header_nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.header_ul{
+	display:table;
+}
+.header_nav .sous_lien{
+	display:block;
+}
+.header_nav a:hover{
+	color:black;
+}
+/***** Sous-menus Continents et Personnes *****/
+.sous{
+	display:none;
+}
+.deroulant:hover .sous{
+	display:block;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+	color:black;
+	font-size:20px;
+}
+/***** Sous-menu imbriqué menant aux différentes pages ****/
+.sous2{
+	display:none;
+	margin-left:60%;
+}
+.deroulant2:hover .sous2{
+	display:block;
+}
+/**** Couleur des liens ****/
+.sous_lien{
+	color:grey;
+}
+
+
+/******** Main *********/
+.japan {
+	width:100%;
+}
+main{
+
+}
+/*** Section 1 ***/
+h1{	
+	text-align:center;
+	font-size:40px;
+	font-weight:normal;
+	font-family: 'Playfair Display', serif;
+	margin:1%;
+}
+h2{
+	font-family: 'Playfair Display', serif;
+	border-top:solid 1px grey;
+	margin-bottom:5%;
+	padding-top:2%;
+}
+.texte_intro{
+	text-align:center;
+	width:60%;
+	margin-left:20%;
+	font-style:italic;
+	font-family: 'Raleway', sans-serif;
+}
+.description{
+	font-family: 'Raleway', sans-serif;
+	line-height:1.5em;
+}
+/*** Section 1 : Rituel ***/
+.section1{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+.art_section1{
+	text-align:justify;
+	width:40%;
+	margin:5%;
+}
+/*** Section 2 : Gastronomie ***/
+.section2{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+.art_section2{
+	text-align:justify;
+	width:40%;
+	margin:5%;
+}
+
+/*** Section 3 : Un lieu ***/
+.section3{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+.art_section3{
+	text-align:justify;
+	width:40%;
+	margin:5%;
+}
+/*** Taille des images ***/
+.flower{
+	width:40%;
+	margin:5%;
+	border:solid 1px grey;
+	border-radius:3px;
+}
+.matcha{
+	width:40%;
+	margin:5%;
+	border-radius:3px;
+}
+.fuji{
+	width:40%;
+	margin:5%;
+	border:solid 1px grey;
+	border-radius:3px;
+}
+
+/***** Liens à modifier et à animer ! ****/
+.link{
+	color:grey;	
+}
+.link:hover{
+	color:black;	
 }
