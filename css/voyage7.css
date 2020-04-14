@@ -1,1 +1,483 @@
-voyage7.css
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+/*FONT*/
+
+
+/***** GENERALE ***/
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style-type: none;
+}
+body {
+    max-width: 1400px;
+    text-align: center;
+}
+
+.main-cuba h1 , .main-cuba h2 ,.main-cuba h3 , .main-cuba h4 {
+    font-family: 'Girassol', cursive;
+    
+}
+.main-cuba h2 {
+    color: red;
+}
+h3 {
+    color: #015a98;
+}
+h4 {
+    margin: 2% auto;
+}
+p  {
+    font-family: 'Amiri', serif;
+}
+.font-cursive {
+    font-family: 'Lobster', cursive;
+}
+
+/***** HEADER *****/
+header{
+	border-bottom:solid 1px grey;
+	font-family: 'Playfair Display', serif;
+	padding:5%;
+}
+.header_nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.header_ul{
+	display:table;
+}
+.header_nav .sous_lien{
+	display:block;
+}
+.header_nav a:hover{
+	color:black;
+}
+/***** Sous-menus Continents et Personnes *****/
+.sous{
+	display:none;
+}
+.deroulant:hover .sous{
+	display:block;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+	color:black;
+	font-size:20px;
+}
+/***** Sous-menu imbriqué menant aux différentes pages ****/
+.sous2{
+	display:none;
+	margin-left:60%;
+}
+.deroulant2:hover .sous2{
+	display:block;
+}
+/**** Couleur des liens ****/
+.sous_lien{
+	color:grey;
+}
+
+
+/****** MAIN ******/
+main {
+    background-color: rgba(250, 235, 215, 0.753);
+}
+
+.div-cuba-presentation {
+    min-height: 65vh;
+    background-image: url(../src/img/cuba/Cuba.jpg);
+    background-position:  left 50% top 90%;
+    background-size: cover; 
+}
+
+.div-cuba-presentation h1 {
+    margin-top: 0;
+    padding: 1%;
+    font-size: 60px;
+}
+.div-cuba-presentation p {
+    width: 55%;
+    margin: auto;
+    padding: 1%;
+    background-color: rgba(250, 235, 215, 0.753);
+}
+
+h2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.div-lieux-cuba {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.div-lieux-cuba section {
+    width: 26%;
+    margin: 1.5%;
+    padding: 2%;
+    background-color: white;
+}
+@media screen and (max-width:699px) {
+    .div-lieux-cuba {
+        display: block;  
+    }
+    .div-lieux-cuba section {
+        width: 93%;
+    }
+}
+
+
+
+.div-lieux-cuba section img {
+    max-width: 100%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+hr {
+    width: 30%;
+    margin: 4% auto;
+    height: 2PX;
+    background-color: rgba(250, 235, 215, 0.753);
+    border: none;
+}
+
+.div-lieux-cuba section p {
+    text-align: justify;
+}
+
+.div-image-fixe {
+    background-image: url(../src/img/cuba/fond.jpg);
+    height: 80vh;
+    margin-top: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+
+.roadtrip-cuba-p {
+    width: 70%;
+    margin: auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6,100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.wrapper section {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(7,auto);
+        margin: 20px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border: 1px dotted black;
+}
+
+.flex div {
+    width: 50%;
+}
+
+@media screen and (max-width:500px) {
+    .flex {
+        display: block;
+    }
+    .flex div {
+        width: 100%;
+    }
+}
+
+.flex img {
+    width: 100%;
+}
+
+.flex ul  {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+.flex li {
+    list-style: url(../src/img/cuba/icon.png);
+}
+
+span {
+    margin: 2%;
+}
+.circle-left::before {
+    content: '\e800';
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    color: red;
+    
+}
+
+.circle-right::before {
+    content: '\e801';
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    color: red;
+    
+}
+
+.section-guide {
+    display: flex;
+    padding: 1%;
+    
+}
+
+.section-guide div {
+    width: 50%;
+}
+
+@media  screen and (max-width:500px) {
+    .section-guide {
+        display: block;
+    }
+    .section-guide div {
+        width: 100%;
+    }
+}
+
+.section-guide div img {
+    width: 30%;
+}
+
+.section-guide a {
+    display: block;
+    width: 26%;
+    margin: auto;
+    padding: 2%;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+.section-guide a:hover {
+    background-color: rgb(253, 93, 93);
+    animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+  
+  @keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+
+
+
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: teal;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+footer a:hover{
+    transform: scale(1.4);
+    transition: 0.5s;
+    color: white;
+}
+footer section{
+    width: 30%;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    color:black   
+}
+
+#icon1:before{
+    content: "f";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;   
+
+}
+
+#icon2:before{
+    content: "i";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+#icon3:before{
+    content: "t";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon4:before{
+    content: "y";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon5:before{
+    content: "p";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+.socialicons{
+    padding:5%;
+}
+.socialicons:hover{
+    color: white;
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+.title-footer{
+    text-align: center;
+}
+.destination a{
+    padding: 5%;
+}
+.destination{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 40%;
+    
+}
+.subdestination{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.sublink{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 30%;
+}
+
+.sublink a{
+    width: 100%;
+}
+
+.contactus a{
+    padding: 5%;
+    margin-top: 1em;
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;  
+}
