@@ -1,1 +1,430 @@
-voyage8.css
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+/*FONT*/
+
+/***** GENERALE ***/
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style-type: none;
+}
+body {
+    max-width: 1400px;
+    text-align: center;
+}
+
+/***** HEADER *****/
+header{
+	border-bottom:solid 1px grey;
+	font-family: 'Playfair Display', serif;
+	padding:5%;
+}
+.header_nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.header_ul{
+	display:table;
+}
+.header_nav .sous_lien{
+	display:block;
+}
+.header_nav a:hover{
+	color:black;
+}
+/***** Sous-menus Continents et Personnes *****/
+.sous{
+	display:none;
+}
+.deroulant:hover .sous{
+	display:block;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+	color:black;
+	font-size:20px;
+}
+/***** Sous-menu imbriqué menant aux différentes pages ****/
+.sous2{
+	display:none;
+	margin-left:60%;
+}
+.deroulant2:hover .sous2{
+	display:block;
+}
+/**** Couleur des liens ****/
+.sous_lien{
+	color:grey;
+}
+
+
+/****** MAIN ******/
+
+.section1 {
+    position: relative;
+    background-image: url(../src/img/majorque/fond.JPG);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 div {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 60%;
+    padding: 2%;
+    color: white;
+    background-color: #39c4c6da;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/***** MENU DEROULANT *****/
+
+main {
+    background-color: aliceblue;
+}
+#menu-majorque , #menu-majorque ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+}
+
+#menu-majorque li {
+    display:inline-block;
+    position:relative;
+    width: 20%;
+    border-radius:8px 8px 0 0;
+}
+
+#menu-majorque ul li {
+    display:inherit;
+    border-radius:0;
+}
+
+#menu-majorque ul li:hover {
+    border-radius:0;
+}
+
+#menu-majorque ul li:last-child{
+    border-radius:0 0 8px 8px;
+}
+
+#menu-majorque ul{
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+
+#menu-majorque li:hover ul{
+    max-height:15em;
+}
+
+#menu-majorque li:first-child{
+    background-color: #356db7;
+    background-image:-webkit-linear-gradient(top, #356db7 0%, #2A2333 100%);
+    background-image:linear-gradient(to bottom, #356db7 0%, #2A2333 100%);
+}
+#menu-majorque li:nth-child(2){
+    background-color: #729EBF;
+    background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+    background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+
+#menu-majorque li:last-child{
+    background-color: #45c5dc;
+    background-image:-webkit-linear-gradient(top, #45c5dc 0%, #143d44 100%);
+    background-image:linear-gradient(to bottom, #45c5dc 0%, #143d44 100%);
+}
+
+#menu-majorque li li {
+    width: 100%;
+}
+#menu-majorque li:first-child li{
+    background:#21487a;
+}
+#menu-majorque li:nth-child(2) li{
+    background:#333A40;
+}
+#menu-majorque li:last-child li{
+    background:#1e5d68;
+}
+
+#menu-majorque li:first-child:hover, #menu-majorque li:first-child li:hover{
+    background:#356db7;
+}
+#menu-majorque li:nth-child(2):hover, #menu-majorque li:nth-child(2) li:hover{
+    background:rgb(62, 86, 104);
+}
+#menu-majorque li:nth-child(3):hover, #menu-majorque li:nth-child(3) li:hover{
+    background:#45c5dc;
+}
+
+#menu-majorque a{
+    text-decoration:none;
+    display:block;
+    padding:8px 32px;
+    color:#fff;
+    font-family:arial;
+}
+#menu-majorque ul a{
+    padding:8px 0;
+}
+#menu-majorque li:hover li a{
+    color:#fff;
+    text-transform:inherit;
+}
+#menu-majorque li:hover a, #menu-majorque li li:hover a{
+    color:#000;
+}
+
+@media screen and (max-width:932px) {
+    #menu-majorque li {
+        width: 30%;
+        font-size: 10.5px;
+    }  
+}
+
+#infos div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+#infos div section {
+    width: 29%;
+    min-height: 71vh;
+    margin: 2% auto;
+    padding: 1%;
+    border: 1px solid black;
+    background-color: white;
+    
+}
+
+#infos div section ul {
+    margin: 3%;
+    text-align: left;
+    list-style: url(../src/img/majorque/favicon-16x16.png);
+}
+
+@media screen and (max-width:799px) {
+    #infos div {
+        flex-direction: column;
+    }
+    #infos div section {
+        width: 90%;
+        margin: 2% auto;  
+    }
+    
+    #infos div section ul {
+        margin: 5%;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1100px) {
+    #infos div section {
+        width: 25%; 
+    }
+    #infos div section ul {
+        margin: 5%;
+    }
+    
+}
+
+
+#infos div section ul li ul li {
+    list-style: circle;
+}
+
+hr {
+    width: 50%;
+    margin: 2% auto;
+    border: solid 1px  #2fb7c3;
+}
+
+#infos div section p{
+   
+    
+}
+
+.infos-img {
+    width: 30%;
+    align-self: center;
+    padding: 0.5%;
+    border: 2px solid black;
+}
+
+@media screen and (max-width:800px) {
+    .infos-img {
+        width: 90%;
+    }
+}
+
+.div-deco {
+    height: 5vh;
+    background-color: #21487a;
+}
+
+#incontournables {
+    width: 90%;
+    margin: auto;
+}
+
+.div-incontournables {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-incontournables div {
+    width: 30%;
+    position: relative;
+}
+
+.div-incontournables div section {
+   position: absolute;
+   top: 0;
+   z-index: 1;
+   
+   
+}
+
+.div-incontournables div img {
+    width: 100%;
+    min-height: 35vh; 
+    z-index: 2;
+}
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: teal;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+footer a:hover{
+    transform: scale(1.4);
+    transition: 0.5s;
+    color: white;
+}
+footer section{
+    width: 30%;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    color:black   
+}
+
+#icon1:before{
+    content: "f";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;   
+
+}
+
+#icon2:before{
+    content: "i";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+#icon3:before{
+    content: "t";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon4:before{
+    content: "y";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon5:before{
+    content: "p";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+.socialicons{
+    padding:5%;
+}
+.socialicons:hover{
+    color: white;
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+.title-footer{
+    text-align: center;
+}
+.destination a{
+    padding: 5%;
+}
+.destination{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 40%;
+    
+}
+.subdestination{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.sublink{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 30%;
+}
+
+.sublink a{
+    width: 100%;
+}
+
+.contactus a{
+    padding: 5%;
+    margin-top: 1em;
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;  
+}
