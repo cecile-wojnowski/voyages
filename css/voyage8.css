@@ -1,5 +1,6 @@
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 /*FONT*/
 
 /***** GENERALE ***/
@@ -288,9 +289,22 @@ hr {
     justify-content: space-evenly;
 }
 
+
+
 .div-incontournables div {
     width: 30%;
     position: relative;
+    
+}
+
+@media screen and (max-width:500px) {
+    .div-incontournables {
+        flex-direction: column;
+    }
+    .div-incontournables div {
+        width: 90%;
+        margin: auto;
+    }
     
 }
 
@@ -319,6 +333,65 @@ hr {
     min-height: 36vh;   
 }
 
+#itineraire {
+   
+}
+
+#itineraire p{
+   width: 80%;
+   margin: 2% auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.flex section {
+    width: 45%;
+    margin: 2% auto;
+    padding: 1%;
+    min-height: 45vh;
+    border: 2PX #487ec5 SOLID;
+    background-color: white;
+    box-shadow: 8px 8px 8px gray;
+    position: relative;
+}
+
+.h3 {
+    z-index: 1000;
+    position: absolute;
+    top: -7%;
+    left:12%;
+    transform: rotate(-3deg);
+    font-size: 30PX;
+    font-family: 'Sacramento', cursive;;
+}
+
+
+@media screen and (max-width: 799px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex section {
+        width: 90%;
+    }
+
+    .h3 {
+        left:0%;
+        font-size: 26PX;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1000px) {
+    .h3 {
+        font-size: 20px;
+    }
+}
 
 /****** SLIDER ****/
 .wrapper {
@@ -329,7 +402,7 @@ hr {
     margin: auto;
 }
 
-#div1 img , #div2 img , #div3 img , #div4 img , #div5 img , #div6 img , #div7 img , #div8 img , #div9 img,  #div10 img ,  #div11 img ,  #div12 img ,  #div13 img ,  #div14 img{
+#div1 img , #div2 img , #div3 img , #div4 img  , #div7 img , #div8 img , #div9 img,  #div10 img ,    #div13 img ,  #div14 img{
     width: 30%;
 }
 
@@ -338,8 +411,12 @@ hr {
     display: inline-block;
     color: #07164f;
     text-decoration: none;
-    font-size: 5em;
+    font-size: 2em;
 
+}
+
+.img {
+    width: 30%;
 }
 
 /**** ANIMATION ****/
