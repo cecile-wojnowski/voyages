@@ -284,26 +284,97 @@ hr {
 
 .div-incontournables {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .div-incontournables div {
     width: 30%;
     position: relative;
+    
 }
 
 .div-incontournables div section {
    position: absolute;
    top: 0;
-   z-index: 1;
-   
-   
+   display: none;
+
 }
 
-.div-incontournables div img {
+.div-incontournables div:hover section {
+    display: block;
     width: 100%;
-    min-height: 35vh; 
-    z-index: 2;
+    height: 36vh;
+    background-color: #39c4c6da;
+    color: black;
+    cursor: help;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+.div-incontournables div img {  
+    width: 100%;
+    min-height: 36vh;   
+}
+
+
+/****** SLIDER ****/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+}
+
+#div1 img , #div2 img , #div3 img , #div4 img , #div5 img , #div6 img , #div7 img , #div8 img , #div9 img,  #div10 img ,  #div11 img ,  #div12 img ,  #div13 img ,  #div14 img{
+    width: 30%;
+}
+
+
+.wrapper a {
+    display: inline-block;
+    color: #07164f;
+    text-decoration: none;
+    font-size: 5em;
+
+}
+
+/**** ANIMATION ****/
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
