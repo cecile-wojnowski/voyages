@@ -59,6 +59,8 @@ header{
 .intro{
 	text-align:center;
 }
+
+/** Apparence et animation des titres**/
 h1{	
 	font-size:40px;
 	font-weight:normal;
@@ -86,7 +88,21 @@ h2:hover{
 	background-size:100% 100%;
 	transition: background-size .3s;
 }
+.h2_matcha{
+	font-family: 'Playfair Display', serif;
+	border-top:solid 1px grey;
+	margin-bottom:5%;
+	padding-top:2%;
+	display:inline-block;
+	background: linear-gradient(to top, #504D18 0%, #504D18 10%, transparent 10.01%) no-repeat;
+	background-size: 0 100%;
+}
+.h2_matcha:hover{
+	background-size:100% 100%;
+	transition: background-size .3s;
+}
 
+/** Apparence des textes **/
 .texte_intro{
 	text-align:center;
 	width:60%;
