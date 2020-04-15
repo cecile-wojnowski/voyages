@@ -56,19 +56,37 @@ header{
 	width:100%;
 }
 /*** Section 1 ***/
-h1{	
+.intro{
 	text-align:center;
+}
+h1{	
 	font-size:40px;
 	font-weight:normal;
 	font-family: 'Playfair Display', serif;
 	margin:1%;
+	/* Surlignement animé*/
+	display:inline-block;
+	background: linear-gradient(to top, pink 0%, pink 10%, transparent 10.01%) no-repeat;
+	background-size: 0 100%;
+}
+h1:hover{
+	background-size:100% 100%;
+	transition: background-size .3s;
 }
 h2{
 	font-family: 'Playfair Display', serif;
 	border-top:solid 1px grey;
 	margin-bottom:5%;
 	padding-top:2%;
+	display:inline-block;
+	background: linear-gradient(to top, pink 0%, pink 10%, transparent 10.01%) no-repeat;
+	background-size: 0 100%;
 }
+h2:hover{
+	background-size:100% 100%;
+	transition: background-size .3s;
+}
+
 .texte_intro{
 	text-align:center;
 	width:60%;
@@ -96,6 +114,7 @@ h2{
 	display:flex;
 	flex-direction:row;
 	justify-content: space-between;
+	background-color: #BDBCA8;
 }
 .art_section2{
 	text-align:justify;
@@ -120,23 +139,23 @@ h2{
 	margin:5%;
 	border:solid 1px grey;
 	border-radius:3px;
-	animation: slideDown 5s;
+	animation: slideLeft 5s;
 	animation-delay:2s;
 }
 .matcha{
 	width:40%;
 	margin:5%;
 	border-radius:3px;
-	animation: slideDown 5s;
-	animation-delay:3s;
+	animation: slideRight 5s;
+	animation-delay:4s;
 }
 .fuji{
 	width:40%;
 	margin:5%;
 	border:solid 1px grey;
 	border-radius:3px;
-	animation: slideDown 5s;
-	animation-delay:4s;
+	animation: slideLeft 5s;
+	animation-delay:6s;
 }
 
 /***** Liens à modifier et à animer ! ****/
@@ -160,14 +179,24 @@ h2{
 }
 
 /*** Création d'une animation ***/
-@keyframes slideDown{
+@keyframes slideLeft{
 
 	from{
-		transform: translateY(200px);
+		transform: translateX(200px);
 		opacity: 0;
 	}
 	to{
-		transform: translateY(0);
+		transform: translateX(0);
 		opacity: 1;
+	}
+}
+@keyframes slideRight{
+	from{
+		transform: translateX(-200px);
+		opacity:0;
+	}
+	to{
+		transform: translateX(0);
+		opacity:1;
 	}
 }
