@@ -10,7 +10,8 @@
 }
 body{
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    
 }
 /*HEADER*/
 header{
@@ -225,6 +226,46 @@ figcaption{
     width: 100%;
     
 }
+/*RESPONSIVE*/
+@media screen and (min-width:480px) and (max-width:600px){
+    .slider-container h1{
+        left: 35%;
+    }
+    .sicily-city{
+        grid-template-rows: 28% 72%;
+        grid-template-columns: 100%;
+    }
+    .sicily-city h1{
+        margin-bottom: 1%;
+    }
+    .flipping-icon img{
+        width: 40%;
+    }
+
+    .navbar2 ul{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navbar2 li{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .big-container1{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+    .city-content{
+        margin-bottom: 2%;
+    }
+
+}
+@media screen and (min-width:320px) and (max-height:479px){
+    
+}
+
 
 /*FOOTER*/
 footer{
