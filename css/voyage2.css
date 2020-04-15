@@ -52,7 +52,7 @@ header{
 }
 
 
-/********* Main ********/
+/************** Main ************/
 .barcelone{
 	width:100%;
 }
@@ -120,36 +120,34 @@ h2{
 	align-self:center;
 	margin:1%;
 }
-/*** Taille des images ***/
-.procession{
+/*** Taille des images et animation ***/
+.images{
 	width:50%;
 	border:solid 1px grey;
 	border-radius:3px;
 	align-self: center;
 	margin:3%;
+	opacity: 1;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
-.paella{
-	width:50%;
-	border-radius:3px;
-	align-self:center;
-	border: solid 1px grey;
-	margin:3%;
-}
-.gaudi{
-	width:50%;
-	margin:3%;
-	border:solid 1px grey;
-	border-radius:3px;
-	align-self:center;
+.images:hover{
+	opacity: .5;
 }
 
 /***** Liens ****/
 .link{
-	color:grey;	
+	color:lightgrey;
+	transition: font-size 1s;
+	transition: color 1s;
+	font-size:16px;
+	display:inline-block;	
 }
 .link:hover{
-	color:black;	
+	color:black;
+	font-size:18px;	
 }
+
 
 /*FOOTER*/
 footer{
