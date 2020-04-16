@@ -78,7 +78,6 @@ h1:hover{
 	background-size:100% 100%;
 	transition: background-size .3s;
 }
-
 .h2_anim{
 	font-family: 'Playfair Display', serif, Georgia;
 	border-top:solid 1px lightgrey;
