@@ -137,6 +137,7 @@ h1:hover{
 	display:flex;
 	flex-direction:column;
 	justify-content: space-between;
+	background-color: #F4F6F8;
 }
 .art_section2{
 	text-align:center;
@@ -187,6 +188,8 @@ h1:hover{
 	grid-template-columns: 10% 10% 10%;
 	grid-template-rows:10% 10% 10%;
 	grid-gap: 22%;
+	padding-bottom:5%;
+	padding-top:2%;
 }
 .zoom{
 	width:400px;
