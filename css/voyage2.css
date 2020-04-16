@@ -35,9 +35,6 @@ header{
 .deroulant:hover .sous{
 	display:block;	
 }
-.li_header{
-	position:relative;
-}
 
 /***** Sous-menu imbriqué menant aux différentes pages ****/
 .sous2{
