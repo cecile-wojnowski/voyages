@@ -54,7 +54,7 @@ header{
 }
 
 
-/******** Main *********/
+/*********** Main ***********/
 .japan {
 	width:100%;
 }
@@ -67,7 +67,7 @@ header{
 h1{	
 	font-size:40px;
 	font-weight:normal;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Playfair Display', serif, Georgia;
 	margin:1%;
 	/* Surlignement animé*/
 	display:inline-block;
@@ -139,6 +139,26 @@ h1:hover{
 	text-align:justify;
 	width:40%;
 	margin:5%;
+}
+/** Apparence du tableau comparatif **/
+table{
+	border-collapse: separate;
+	font-family: 'Raleway', sans-serif;
+	font-size:14px;
+	margin-left:12%;
+	empty-cells: hide;
+}
+thead{
+	font-weight: bold;
+
+}
+td{
+	border:solid 1px #7C7A52;
+	text-align:center;
+	padding:2%;
+}
+.td_name{
+	font-weight:bold;
 }
 
 /*** Section 3 : Un lieu ***/
