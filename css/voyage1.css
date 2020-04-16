@@ -78,7 +78,7 @@ h1:hover{
 	background-size:100% 100%;
 	transition: background-size .3s;
 }
-h2{
+.h2_anim{
 	font-family: 'Playfair Display', serif;
 	border-top:solid 1px grey;
 	margin-bottom:5%;
@@ -87,7 +87,7 @@ h2{
 	background: linear-gradient(to top, pink 0%, pink 10%, transparent 10.01%) no-repeat;
 	background-size: 0 100%;
 }
-h2:hover{
+.h2_anim:hover{
 	background-size:100% 100%;
 	transition: background-size .3s;
 }
