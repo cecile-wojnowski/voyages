@@ -1,3 +1,6 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+/*FONT*/
 *{
 	margin:0;
 	padding:0;
@@ -51,7 +54,7 @@ header{
 }
 
 
-/******** Main *********/
+/*********** Main ***********/
 .japan {
 	width:100%;
 }
@@ -64,7 +67,7 @@ header{
 h1{	
 	font-size:40px;
 	font-weight:normal;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Playfair Display', serif, Georgia;
 	margin:1%;
 	/* Surlignement animé*/
 	display:inline-block;
@@ -75,8 +78,8 @@ h1:hover{
 	background-size:100% 100%;
 	transition: background-size .3s;
 }
-h2{
-	font-family: 'Playfair Display', serif;
+.h2_anim{
+	font-family: 'Playfair Display', serif, Georgia;
 	border-top:solid 1px grey;
 	margin-bottom:5%;
 	padding-top:2%;
@@ -84,12 +87,12 @@ h2{
 	background: linear-gradient(to top, pink 0%, pink 10%, transparent 10.01%) no-repeat;
 	background-size: 0 100%;
 }
-h2:hover{
+.h2_anim:hover{
 	background-size:100% 100%;
 	transition: background-size .3s;
 }
 .h2_matcha{
-	font-family: 'Playfair Display', serif;
+	font-family: 'Playfair Display', serif, Georgia;
 	border-top:solid 1px grey;
 	margin-bottom:5%;
 	padding-top:2%;
@@ -108,10 +111,10 @@ h2:hover{
 	width:60%;
 	margin-left:20%;
 	font-style:italic;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif, Arial;
 }
 .description{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif, Arial;
 	line-height:1.5em;
 }
 /*** Section 1 : Rituel ***/
@@ -136,6 +139,27 @@ h2:hover{
 	text-align:justify;
 	width:40%;
 	margin:5%;
+}
+/** Apparence du tableau comparatif **/
+table{
+	border-collapse: separate;
+	font-family: 'Raleway', sans-serif, Arial;
+	font-size:14px;
+	margin-left:12%;
+	empty-cells: hide;
+}
+thead{
+	font-weight: bold;
+
+}
+td{
+	border:solid 1px #7C7A52;
+	text-align:center;
+	padding:2%;
+	background-color: #D3D3C5;
+}
+.td_name{
+	font-weight:bold;
 }
 
 /*** Section 3 : Un lieu ***/
@@ -163,7 +187,7 @@ h2:hover{
 	margin:5%;
 	border-radius:3px;
 	animation: slideRight 5s;
-	animation-delay:6s;
+	animation-delay:8s;
 }
 .fuji{
 	width:40%;
@@ -171,7 +195,7 @@ h2:hover{
 	border:solid 1px grey;
 	border-radius:3px;
 	animation: slideLeft 5s;
-	animation-delay:10s;
+	animation-delay:15s;
 }
 
 /***** Liens  ****/
