@@ -12,33 +12,28 @@ header{
 	border-bottom:solid 1px grey;
 	font-family: 'Playfair Display', serif;
 	padding:5%;
-	background-color: transparent;
 }
+/** Disposition en ligne du menu**/
 .header_nav{
 	display:flex;
 	flex-direction:row;
 	justify-content: space-around;
 }
-.header_ul{
-	display:table;
-}
-.header_nav .sous_lien{
-	display:block;
-}
 .header_nav a:hover{
 	color:black;
 }
 /***** Sous-menus Continents et Personnes *****/
+/*Fait disparaître le sous-menu,
+et le fait réapparaître au survol de la souris**/
 .sous{
-	display:none;
+	display:none; 
 }
 .deroulant:hover .sous{
 	display:block;
-}
-/**** Liens Continents et Personnes ****/
-.header_link{
-	color:black;
-	font-size:20px;
+	position:absolute; /*Empêche le sous-menu de déplacer les autres éléments**/
+	background-color: white;
+	border:solid 1px lightgrey;
+	padding:2%;
 }
 /***** Sous-menu imbriqué menant aux différentes pages ****/
 .sous2{
@@ -47,6 +42,16 @@ header{
 }
 .deroulant2:hover .sous2{
 	display:block;
+	background-color: white;
+	position: absolute;
+	padding:20%;
+	margin-left:80%;
+	border:solid 1px grey;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+	color:black;
+	font-size:20px;
 }
 /**** Couleur des liens ****/
 .sous_lien{
