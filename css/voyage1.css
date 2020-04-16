@@ -166,7 +166,7 @@ h1:hover{
 	margin:5%;
 	border-radius:3px;
 	animation: slideRight 5s;
-	animation-delay:6s;
+	animation-delay:8s;
 }
 .fuji{
 	width:40%;
@@ -174,7 +174,7 @@ h1:hover{
 	border:solid 1px grey;
 	border-radius:3px;
 	animation: slideLeft 5s;
-	animation-delay:10s;
+	animation-delay:15s;
 }
 
 /***** Liens  ****/
