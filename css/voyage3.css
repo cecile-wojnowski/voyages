@@ -29,19 +29,19 @@ header{
 .header_nav a:hover{
 	color:black;
 }
-/***** Sous-menus Continents et Personnes *****/
+/** Sous-menus Continents et Personnes ***/
 .sous{
 	display:none;
 }
 .deroulant:hover .sous{
 	display:block;
 }
-/**** Liens Continents et Personnes ****/
+/** Liens Continents et Personnes **/
 .header_link{
 	color:black;
 	font-size:20px;
 }
-/***** Sous-menu imbriqué menant aux différentes pages ****/
+/** Sous-menu imbriqué menant aux différentes pages **/
 .sous2{
 	display:none;
 	margin-left:60%;
@@ -49,13 +49,13 @@ header{
 .deroulant2:hover .sous2{
 	display:block;
 }
-/**** Couleur des liens ****/
+/** Couleur des liens **/
 .sous_lien{
 	color:grey;
 }
 
 
-/********* Main ********/
+/************ Main **********/
 .belgique{
 	width:100%;
 }
@@ -147,16 +147,22 @@ h2{
 }
 .img_section2{
 	display: grid;
-	grid-template-columns: 20% 20% 20%;
-	grid-template-rows:20% 20% 20%;
-	grid-gap: 12%;
+	grid-template-columns: 10% 10% 10%;
+	grid-template-rows:10% 10% 10%;
+	grid-gap: 22%;
 }
 .zoom{
 	width:400px;
 	height:300px;
-	margin-left:12%;
+	margin-left:17%;
 	border-radius:3px;
 	border: solid 1px grey;
+	/** Animation de zoom**/
+	transform: scale(1);
+	transition: .4s ease-in-out;
+}
+.zoom:hover{
+	transform: scale(1.1);
 }
 .magritte{
 	width:50%;
