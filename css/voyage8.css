@@ -1,6 +1,9 @@
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gotu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
 /*FONT*/
 
 /***** GENERALE ***/
@@ -13,6 +16,21 @@
 body {
     max-width: 1400px;
     text-align: center;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+h1 ,  h2 ,h3 , h4 {
+    font-family: 'Pacifico', cursive;
+}
+h1 {
+    font-size: 40px;
+}
+
+#infos h2 {
+    font-size: 30px;
 }
 
 /***** HEADER *****/
@@ -85,9 +103,7 @@ header{
 
 /***** MENU DEROULANT *****/
 
-main {
-    background-color: aliceblue;
-}
+
 #menu-majorque , #menu-majorque ul{
     margin: 0;
     padding: 0;
@@ -177,7 +193,7 @@ main {
     display:block;
     padding:8px 32px;
     color:#fff;
-    font-family:arial;
+    font-family: 'Arial';
 }
 #menu-majorque ul a{
     padding:8px 0;
@@ -214,10 +230,24 @@ main {
     
 }
 
+#infos div section p , #infos div section ul{
+    font-family: 'Gotu', sans-serif;
+    line-height: 1.1em;
+}
+
 #infos div section ul {
     margin: 3%;
     text-align: left;
     list-style: url(../src/img/majorque/favicon-16x16.png);
+    font-weight: bold;
+}
+
+#infos a {
+    color: #2fb7c3;
+}
+
+#infos a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width:799px) {
@@ -274,7 +304,7 @@ hr {
 }
 
 .div-deco {
-    height: 5vh;
+    height: 1vh;
     background-color: #21487a;
 }
 
@@ -297,15 +327,9 @@ hr {
     
 }
 
-@media screen and (max-width:500px) {
-    .div-incontournables {
-        flex-direction: column;
-    }
-    .div-incontournables div {
-        width: 90%;
-        margin: auto;
-    }
-    
+.div-incontournables div img {
+    width: 100%;
+    height: 36vh;
 }
 
 .div-incontournables div section {
@@ -328,28 +352,47 @@ hr {
     -o-animation: fadein 3s; /* Opera */
 }
 
-.div-incontournables div img {  
-    width: 100%;
-    min-height: 36vh;   
-}
 
-#itineraire {
-   
+
+@media screen and (max-width:799px) {
+    .div-incontournables {
+        flex-direction: column;
+    }
+    .div-incontournables div {
+        width: 90%;
+        margin: auto;
+    }
+    .div-incontournables div img {
+        max-width: 100%;
+    }
+
+    .div-incontournables div:hover section {
+  
+        max-width: 100%;
+        MIN-height: 37vh;
+        
+      
+    }
+    
 }
 
 #itineraire p{
    width: 80%;
    margin: 2% auto;
+   
+}
+
+.p1 {
+    font: bold;
+    font-size: 25PX;
+    font-family: 'Dancing Script', cursive;
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;  
 }
-
-
 
 .flex section {
     width: 45%;
@@ -369,7 +412,7 @@ hr {
     left:12%;
     transform: rotate(-3deg);
     font-size: 30PX;
-    font-family: 'Sacramento', cursive;;
+    font-family: 'Sacramento', cursive;
 }
 
 
@@ -403,7 +446,7 @@ hr {
 }
 
 #div1 img , #div2 img , #div3 img , #div4 img  , #div7 img , #div8 img , #div9 img,  #div10 img ,    #div13 img ,  #div14 img{
-    width: 30%;
+    width: 29%;
 }
 
 
@@ -417,6 +460,28 @@ hr {
 
 .img {
     width: 30%;
+}
+
+.fleche-gauche:before {
+        content: '\e800';
+        font-family: "fontello";
+       font-size: 20px;      
+}
+
+.fleche-droite:before {
+    content: '\e801';
+    font-family: "fontello";
+    font-size: 20px;   
+}
+
+.fleche-gauche:hover  {
+    animation: rotating 2s;
+    color: #2fb7c3;
+}
+
+.fleche-droite:hover {
+    animation: rotating2 2s;
+    color: #2fb7c3;
 }
 
 /**** ANIMATION ****/
@@ -452,6 +517,34 @@ hr {
     to {
         opacity: 1;
     }
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotating2 {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+.ordinateur {
+    width: 80%;
+    margin: auto;
+    height: 50vh;
+  
+}
+.ordinateur img {
+    width: 80%;
 }
 
 
