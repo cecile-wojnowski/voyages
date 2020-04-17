@@ -4,7 +4,11 @@
 
 
 *{
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+	text-decoration:none;
+    list-style-type: none;
+    box-sizing: border-box;;
 }
 
 body {
@@ -15,24 +19,25 @@ body {
     padding: 0;
 }
 
-body {
-    max-width: 1400px;
+
+/***** Header *****/
+.cover-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header img{
+    width: 50%;
 }
 header{
 	border-bottom:solid 1px grey;
 	font-family: 'Playfair Display', serif;
-	padding:5%;
+    padding:5%;
 }
 .header_nav{
 	display:flex;
 	flex-direction:row;
 	justify-content: space-around;
-}
-.header_ul{
-	display:table;
-}
-.header_nav .sous_lien{
-	display:block;
 }
 .header_nav a:hover{
 	color:black;
@@ -40,6 +45,12 @@ header{
 /***** Sous-menus Continents et Personnes *****/
 .sous{
 	display:none;
+    background-color: white;
+    border:solid 1px lightgrey;
+    position:absolute;
+    padding:1%;
+    width:7em;
+    height:6em;
 }
 .deroulant:hover .sous{
 	display:block;
@@ -50,12 +61,51 @@ header{
 	font-size:20px;
 }
 /***** Sous-menu imbriqué menant aux différentes pages ****/
+/**Sous-menu Amérique et Asie avec une plus petite hauteur**/
+.sous2_continents{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:4em;    
+}
+.deroulant2:hover .sous2_continents{
+    display:block;    
+}
+
+/** Sous-menu de l'Europe avec une plus grande hauteur**/
+.sous2_europe{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:8em;
+}
+.deroulant2:hover .sous2_europe{
+    display:block;
+}
+/** Sous-menu des pays par personne**/
 .sous2{
-	display:none;
-	margin-left:60%;
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:6em;
 }
 .deroulant2:hover .sous2{
-	display:block;
+    display:block;
 }
 /**** Couleur des liens ****/
 .sous_lien{
@@ -192,11 +242,7 @@ p {
     }
 }
 
-<<<<<<< HEAD
 /****** FOOTER *****/
-=======
-/*FOOTER*/
->>>>>>> Céline
 footer{
     display: flex;
     flex-direction: row;
@@ -316,10 +362,5 @@ footer section{
     flex-direction: column;
     justify-items: center;
     align-items: center;  
-<<<<<<< HEAD
 }
 
-
-=======
-}
->>>>>>> Céline
