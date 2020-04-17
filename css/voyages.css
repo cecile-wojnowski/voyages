@@ -62,9 +62,11 @@ header{
     width:7em;
     top:20px;
     height:4em;
+    
 }
 .deroulant2:hover .sous2_continents{
     display:block;
+    
 }
 
 
@@ -102,6 +104,16 @@ header{
 .sous_lien{
 	color:grey;
 }
+/*MAIN*/
+
+
+
+
+
+
+
+
+/* END MAIN*/
 
 
 
