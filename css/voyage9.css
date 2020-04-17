@@ -151,11 +151,6 @@ header{
 }
 
 
-
-
-
-
-
 .lien {
     
    color: gray;
@@ -173,8 +168,6 @@ header{
     color: white;
 }
 
-
-
 /****** SLIDER *******/
 
 .slider {
@@ -184,13 +177,8 @@ header{
     
 }
 
-#album1
-
-
-#album1 {
+#album1 , #album2 , #album3 , #album4 , #album5, #album6 {
   width: 100%;
-  margin: 2% auto;
-
 }
 
 .phot1-img {
@@ -206,13 +194,14 @@ header{
 
 /********* GRID *******/
 #album1 div {
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 0px;
 }
-
 
 
 .div1 ,.div2  ,.div3,.div4 ,.div5  {
@@ -290,12 +279,14 @@ table p {
     font-family: 'Indie Flower', cursive;
     font-size: 25px;
 }
-.img1 , .img2, .img3 , .img4 , .img5 , .img6 {
-    width: 100%;
-}
+
 
 
 /****** GRID 2 ******/
+
+.img1 , .img2, .img3 , .img4 , .img5 , .img6 {
+    width: 100%;
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
