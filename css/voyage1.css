@@ -7,7 +7,8 @@
 	text-decoration: none;
 	list-style-type: none;
 }
-/***** Header *****/
+
+/******** Header *******/
 .cover-header{
     display: flex;
     flex-direction: row;
@@ -31,8 +32,6 @@ header{
 	color:black;
 }
 /***** Sous-menus Continents et Personnes *****/
-/*Fait disparaître le sous-menu,
-et le fait réapparaître au survol de la souris**/
 .sous{
 	display:none;
 	background-color: white;
