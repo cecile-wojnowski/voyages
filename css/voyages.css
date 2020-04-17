@@ -107,7 +107,7 @@ header{
 /*MAIN*/
 .section2{
     padding: 1em;
-    background: #bdc3c7;
+    background: #dff9fb;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -440,7 +440,7 @@ footer section{
     .sous, .sous2{
         width:5em;
         height:5em;
-    }
+	}
     footer{
         display: flex;
         flex-direction: column;
@@ -449,3 +449,4 @@ footer section{
    .sublink{
        width: 100%;
    }
+}
