@@ -7,7 +7,16 @@
 	text-decoration: none;
 	list-style-type: none;
 }
-/***** Header *****/
+
+/******** Header *******/
+.cover-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header img{
+	width: 50%;
+}
 header{
 	border-bottom:solid 1px grey;
 	font-family: 'Playfair Display', serif;
@@ -23,31 +32,59 @@ header{
 	color:black;
 }
 /***** Sous-menus Continents et Personnes *****/
-/*Fait disparaître le sous-menu,
-et le fait réapparaître au survol de la souris**/
 .sous{
 	display:none;
 	background-color: white;
 	border:solid 1px lightgrey;
 	position:absolute;
 	padding:1%;
-	width:80px;
-	height:70px; 
+	width:6em;
+	height:4em; 
 }
 .deroulant:hover .sous{
 	display:block;
 }
 /***** Sous-menu imbriqué menant aux différentes pages ****/
-.sous2{
+.sous2_continents{
 	display:none;
 	margin-left:75%;
 	background-color: white;
 	position: absolute;
 	border:solid 1px lightgrey;
 	padding:10%;
-	width:80px;
+	width:7em;
 	top:20px;
-	height:70px;
+	height:3em;
+}
+.deroulant2:hover .sous2_continents{
+	display:block;
+}
+/** Sous-menu de l'Europe avec une plus grande hauteur**/
+.sous2_europe{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:7em;
+}
+.deroulant2:hover .sous2_europe{
+    display:block;
+}
+/** Sous-menu des pays par personne**/
+.sous2{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:6em;
+    top:20px;
+    height:4em;
 }
 .deroulant2:hover .sous2{
 	display:block;
@@ -288,7 +325,26 @@ td{
 	}
 }
 @media (max-width:780px){
+	/** Redimensionnement taille sous-menus**/
+	.sous, .sous2{
+        width:4em;
+        height:4em;
+	}
+	.sous2_europe{
+		width:4em;
+        height:7em;
+	}
+	.sous2_continents{
+		width:4em;
+        height:3em;
+	}
 	/** Redimensionnement de la taille des textes**/
+	.header_link{
+        font-size:16px;
+    }
+    .sous_lien{
+        font-size:14px;
+    }
 	h1{
 		font-size:30px;
 	}
@@ -318,16 +374,22 @@ td{
 		flex-direction: column-reverse;
 	}
 	/** Redimensionnement des images**/
-	.flower, .matcha, .fuji{
+	.flower,.matcha, .fuji{
 		animation:none;
 		width:50%;
 		align-self: center;
 	}
-
 	/**Centrage des articles**/
 	.art_section1, .art_section2, .art_section3{
 		width:80%;
 		align-self:center;
+	}
+	/**Taille des liens**/
+	.link{
+		font-size:14px;
+	}
+	.link:hover{
+		font-size:16px;
 	}
 }
 @media (max-width:500px){
@@ -338,14 +400,16 @@ td{
 		font-size:14px;
 	}
 	.sous, .sous2{
-		width:62px;
+		width:5em;
+		height:5em;
 	}
 	.link{
-		font-size:14px;
+		font-size:12px;
 	}
 	.link:hover{
-		font-size:16px;
+		font-size:14px;
 	}
+	
 }
 
 
@@ -470,4 +534,15 @@ footer section{
     flex-direction: column;
     justify-items: center;
     align-items: center;  
+}
+
+@media screen and (max-width:700px){
+	footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .sublink{
+       width: 100%;
+   }
 }

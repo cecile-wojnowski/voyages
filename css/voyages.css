@@ -62,14 +62,11 @@ header{
     padding:10%;
     width:7em;
     top:20px;
-    height:4em;
-    
+    height:4em;    
 }
 .deroulant2:hover .sous2_continents{
-    display:block;
-    
+    display:block;    
 }
-
 
 /** Sous-menu de l'Europe avec une plus grande hauteur**/
 .sous2_europe{
@@ -82,9 +79,6 @@ header{
     width:7em;
     top:20px;
     height:8em;
-}
-.deroulant2:hover .sous2{
-	display:block;
 }
 .deroulant2:hover .sous2_europe{
     display:block;
@@ -100,6 +94,9 @@ header{
     width:7em;
     top:20px;
     height:6em;
+}
+.deroulant2:hover .sous2{
+    display:block;
 }
 /**** Couleur des liens ****/
 .sous_lien{
