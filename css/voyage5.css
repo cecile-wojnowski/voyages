@@ -43,6 +43,7 @@ header{
     padding:1%;
     width:7em;
     height:6em; 
+    z-index:1000;
 }
 .deroulant:hover .sous{
     display:block;

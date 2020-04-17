@@ -5,6 +5,96 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 /*FONT*/
 
+/******** Header *******/
+.cover-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header img{
+    width: 50%;
+}
+header{
+    border-bottom:solid 1px grey;
+    font-family: 'Playfair Display', serif, Arial;
+    padding:5%;
+}
+/** Disposition en ligne du menu**/
+.header_nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.header_nav a:hover{
+    color:black;
+}
+/***** Sous-menus Continents et Personnes *****/
+.sous{
+    display:none;
+    background-color: white;
+    border:solid 1px lightgrey;
+    position:absolute;
+    padding:1%;
+    width:5em;
+    height:4em; 
+}
+.deroulant:hover .sous{
+    display:block;
+}
+/***** Sous-menu imbriqué menant aux différentes pages ****/
+.sous2_continents{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:3em;
+}
+.deroulant2:hover .sous2_continents{
+    display:block;
+}
+/** Sous-menu de l'Europe avec une plus grande hauteur**/
+.sous2_europe{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:7em;
+}
+.deroulant2:hover .sous2_europe{
+    display:block;
+}
+/** Sous-menu des pays par personne**/
+.sous2{
+    display:none;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:5em;
+    top:20px;
+    left:80px;
+    height:5em;
+}
+.deroulant2:hover .sous2{
+    display:block;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+    color:black;
+    font-size:20px;
+}
+/**** Couleur des liens ****/
+.sous_lien{
+    color:grey;
+}
 
 /***** GENERALE ***/
 *{
@@ -36,51 +126,6 @@ p  {
 }
 .font-cursive {
     font-family: 'Lobster', cursive;
-}
-
-/***** HEADER *****/
-header{
-	border-bottom:solid 1px grey;
-	font-family: 'Playfair Display', serif;
-	padding:5%;
-}
-.header_nav{
-	display:flex;
-	flex-direction:row;
-	justify-content: space-around;
-}
-.header_ul{
-	display:table;
-}
-.header_nav .sous_lien{
-	display:block;
-}
-.header_nav a:hover{
-	color:black;
-}
-/***** Sous-menus Continents et Personnes *****/
-.sous{
-	display:none;
-}
-.deroulant:hover .sous{
-	display:block;
-}
-/**** Liens Continents et Personnes ****/
-.header_link{
-	color:black;
-	font-size:20px;
-}
-/***** Sous-menu imbriqué menant aux différentes pages ****/
-.sous2{
-	display:none;
-	margin-left:60%;
-}
-.deroulant2:hover .sous2{
-	display:block;
-}
-/**** Couleur des liens ****/
-.sous_lien{
-	color:grey;
 }
 
 
@@ -135,6 +180,27 @@ h2 {
     }
     .div-lieux-cuba section {
         width: 93%;
+    }
+
+    /** Redimensionnement taille sous-menus**/
+    .sous, .sous2{
+        width:5em;
+        height:5em;
+    }
+    .sous2_europe{
+        width:5em;
+        height:7em;
+    }
+    .sous2_continents{
+        width:5em;
+        height:3em;
+    }
+    /** Redimensionnement de la taille des textes**/
+    .header_link{
+        font-size:16px;
+    }
+    .sous_lien{
+        font-size:14px;
     }
 }
 
