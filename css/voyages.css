@@ -40,6 +40,39 @@ header{
 	font-size:20px;
 }
 /***** Sous-menu imbriqué menant aux différentes pages ****/
+/**Sous-menu Amérique et Asie avec une plus petite hauteur**/
+.sous2_continents{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:80px;
+    top:20px;
+    height:50px;
+}
+.deroulant2:hover .sous2_continents{
+    display:block;
+}
+
+/** Sous-menu de l'Europe avec une plus grande hauteur**/
+.sous2_europe{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:80px;
+    top:20px;
+    height:110px;
+}
+.deroulant2:hover .sous2_europe{
+    display:block;
+}
+
+
 .sous2{
 	display:none;
 	margin-left:75%;
