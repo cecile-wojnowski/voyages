@@ -80,9 +80,6 @@ header{
     top:20px;
     height:8em;
 }
-.deroulant2:hover .sous2{
-	display:block;
-}
 .deroulant2:hover .sous2_europe{
     display:block;
 }
@@ -97,6 +94,9 @@ header{
     width:7em;
     top:20px;
     height:6em;
+}
+.deroulant2:hover .sous2{
+    display:block;
 }
 /**** Couleur des liens ****/
 .sous_lien{
