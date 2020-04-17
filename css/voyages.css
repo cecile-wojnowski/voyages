@@ -108,29 +108,122 @@ header{
 
 
 /*MAIN*/
+.intro{
+    font-family: 'Playfair Display', serif, Georgia;
+    text-align:center;
+    background-color: #FBF5EB;
+}
+.h1_section1{
+    color:#004040;
+    padding-top:5%;
+    padding-bottom:2%;
+    font-size:30px;
+}
+.texte_intro{
+    width: 50% ; 
+    border-bottom:solid 1px grey;
+    margin-left:25%;
+    line-height: 1.5em;
+    padding-bottom:2%;
+}
+
 .section1{
-    margin:5%;
+    font-family: 'Playfair Display', serif, Georgia;
+    border-bottom:solid 1px lightgrey;
+    padding-bottom:5%;
+    background-color: #FBF5EB;
+    text-align:center;
+    padding-top:5%;
+}
+.section_intro{
+    font-style:italic;
+    padding:1%;
 }
 .flex{
     display:flex;
     flex-direction:row;
 }
+.p2_section1{
+    margin:1%;
+    color:#004040;
+}
 
+.h2_section1{
+    font-weight:normal;
+}
+.h3_section1, .link_section1{
+    text-align:center;
+    color:#001010;
+    transition: color 1s;
+    cursor:pointer;
+    font-size:25px;
+}
+.link_section1:hover{
+    color:white;
+}
+.article_section1{
+    background-color: #007070;
+    border:solid 1px grey;
+    height:100%;
+    margin:1%;
+    flex-basis:500px;
+    min-height:650px;
+}
 .img_section1{
     width:90%;
     height:90%;
     margin:5%;
+    flex-grow:1;
+    min-height:250px;
+    border:solid 1px black;
+    opacity: 1;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
-.article_section1{
-    background-color:lightgrey;
-    border:solid 1px grey;
-    height:100%;
-    margin:1%;
+.img_section1:hover{
+    opacity: .5;
+}
+.p_section1{
+    margin:2%;
+    line-height: 1.5em;
+    color:#001010;
+    text-align:justify;
+}
+
+@media (max-width:850px){
+    .flex{
+        flex-direction:column;
+    }
+    .img_section1{
+        width:65%;
+        margin-bottom:0;
+    }
+    .link_section1{
+        font-size:20px;
+        margin:0;
+    }
+    .p_section1{
+        width:70%;
+        margin-left:15%;
+        font-size:15px;
+    }
+    .h1_section1{
+        font-size: 22px;
+    }
+    .texte_intro{
+        width:80%;
+        margin-left:10%;
+        font-size:15px;
+    }
+    .h2_section1{
+        font-size:18px;
+        font-weight:bold;
+    }
 }
 
 
 
-
+/*** Section2***/
 
 .section2{
     padding: 1em;
