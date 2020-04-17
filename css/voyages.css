@@ -102,7 +102,34 @@ header{
 .sous_lien{
 	color:grey;
 }
+
+
+
 /*MAIN*/
+.section1{
+    margin:5%;
+}
+.flex{
+    display:flex;
+    flex-direction:row;
+}
+
+.img_section1{
+    width:90%;
+    height:90%;
+    margin:5%;
+}
+.article_section1{
+    background-color:lightgrey;
+    border:solid 1px grey;
+    height:100%;
+    margin:1%;
+}
+
+
+
+
+
 .section2{
     padding: 1em;
     background: #bdc3c7;
