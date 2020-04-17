@@ -1,5 +1,7 @@
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 /*FONT*/
 *{
 	margin:0;
@@ -106,7 +108,111 @@ header{
 }
 /*MAIN*/
 
+/**** Céline ******/
+.section3 {
+    background-color: rgb(247, 235, 214);
+    text-align: center;
+}
 
+.section3 h2 {
+    margin-bottom: 2%;
+    padding-top: 2%;
+}
+
+.section3 h3 {
+    margin: 2% 0;
+}
+
+.section3 h4 {
+    text-align: left;
+    margin: 2% ;
+    color: teal;
+}
+
+.section3 h4:after {
+    content: "";
+    width: 85%;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: teal;
+}
+
+.section3 h5 {
+    margin: 1% auto;
+    color: red;
+}
+
+.section3 h2 , .section3 h3 , .section3 h4 , .section3 h5 , .section3 p  {
+    font-family: 'Oswald', sans-serif;
+}
+
+#section3-p {
+    width: 90%;
+    margin: auto;
+    
+}
+
+.section3 hr {
+    width: 80%;
+    margin: 4% auto;
+    border: white 1px solid;
+}
+.section3-div1{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: auto;
+}
+
+.section3-img {
+    width: 10%;
+    padding: 1%;
+    border: 1px solid teal;
+    border-radius: 50%;
+}
+
+.section3-div2 {
+    display: flex;
+
+}
+.section3-div3 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 2% auto;
+    text-align: center;
+}
+
+.section3-div3 img {
+   width: 50%;
+   margin: auto;
+}
+
+.section3 a  {
+    width: 50%;
+    margin: 1% auto;
+    padding: 1%;
+    background-color: teal;
+    color: white;
+}
+
+.section3 a:hover  {
+    background-color: rgba(0, 128, 128, 0.692);
+    color: black;
+}
+
+/***** RESPONSIVE ****/
+ @media screen and (max-width:700px) {
+    .section3-div1{
+        display: block;
+  
+    }
+
+    .section3-div3 {
+        width: 100%;
+    }
+ }
 
 
 
