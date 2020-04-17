@@ -64,12 +64,25 @@ h1, h2{
     text-align: center;
     padding: 1em;
 }
+@keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 1.5s;
+  }
 .city{
     width: 100%;
     padding: 2%;
     
-    
-
 }
 .content{
     display: flex;
@@ -106,7 +119,7 @@ h1, h2{
     flex-direction: column;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
     text-align: center; 
-    
+    transition: 0.5s;
     
 }
 .card img{
@@ -118,13 +131,64 @@ h1, h2{
     width: 100%;
     
     
+    
 }
+.card:hover{
+    transform: scale(1.2);
+}
+.card:hover img{
+    transform: rotate(5deg);
 
+
+}
 .description-plan{
     padding: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+iframe{
+    padding-left: 5%;
+    padding-bottom: 5%;
+    margin: 2%;
+}
+table{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    margin:2% 2%;
+    
+    
+
+}
+td{
+    padding-left: 2%;
+}
+.table-content{
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+.flipping-icon{
+    transition: 1s;
+}
+.flipping-icon:hover{
+    transform: rotate(360deg);
+}
+@media screen and (max-width:600px){
+    .content, .plan, .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+    }
+    .card{
+        margin-bottom: 3%;
+        width: 50%;
+    }
+    
 }
 
 /*FOOTER*/

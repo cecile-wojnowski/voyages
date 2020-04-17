@@ -276,8 +276,33 @@ main h1, h2, h3{
 
 #insta-icon{
     padding-top: 1em;
+    color: white;
         
 }
+@media screen and (max-width:650px){
+    .top5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .culinary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .card{
+        width: 50%;
+        margin: 3%;
+    }
+    .follow span{
+        display: none;
+    }
+    #insta-icon{
+        padding: 0;
+    }
+}
+
 
 /*FOOTER*/
 footer{
