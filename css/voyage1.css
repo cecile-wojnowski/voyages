@@ -1,1 +1,529 @@
-voyage1.css
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+/*FONT*/
+*{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	list-style-type: none;
+}
+/***** Header *****/
+.cover-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header img{
+	width: 50%;
+}
+header{
+	border-bottom:solid 1px grey;
+	font-family: 'Playfair Display', serif;
+	padding:5%;
+}
+/** Disposition en ligne du menu**/
+.header_nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.header_nav a:hover{
+	color:black;
+}
+/***** Sous-menus Continents et Personnes *****/
+/*Fait disparaître le sous-menu,
+et le fait réapparaître au survol de la souris**/
+.sous{
+	display:none;
+	background-color: white;
+	border:solid 1px lightgrey;
+	position:absolute;
+	padding:1%;
+	width:6em;
+	height:4em; 
+}
+.deroulant:hover .sous{
+	display:block;
+}
+/***** Sous-menu imbriqué menant aux différentes pages ****/
+.sous2_continents{
+	display:none;
+	margin-left:75%;
+	background-color: white;
+	position: absolute;
+	border:solid 1px lightgrey;
+	padding:10%;
+	width:7em;
+	top:20px;
+	height:3em;
+}
+.deroulant2:hover .sous2_continents{
+	display:block;
+}
+/** Sous-menu de l'Europe avec une plus grande hauteur**/
+.sous2_europe{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:7em;
+}
+.deroulant2:hover .sous2_europe{
+    display:block;
+}
+/** Sous-menu des pays par personne**/
+.sous2{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:6em;
+    top:20px;
+    height:4em;
+}
+.deroulant2:hover .sous2{
+	display:block;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+	color:black;
+	font-size:20px;
+}
+/**** Couleur des liens ****/
+.sous_lien{
+	color:grey;
+}
+
+
+/*********** Main ***********/
+.japan {
+	width:100%;
+}
+/*** Section 1 ***/
+.intro{
+	text-align:center;
+}
+
+/** Apparence et animation des titres**/
+h1{	
+	font-size:40px;
+	font-weight:normal;
+	font-family: 'Playfair Display', serif, Georgia;
+	margin:1%;
+	/* Surlignement animé*/
+	display:inline-block;
+	background: linear-gradient(to top, pink 0%, pink 10%, transparent 10.01%) no-repeat;
+	background-size: 0 100%;
+}
+h1:hover{
+	background-size:100% 100%;
+	transition: background-size .3s;
+}
+.h2_anim{
+	font-family: 'Playfair Display', serif, Georgia;
+	border-top:solid 1px grey;
+	margin-bottom:5%;
+	padding-top:2%;
+	display:inline-block;
+	background: linear-gradient(to top, pink 0%, pink 10%, transparent 10.01%) no-repeat;
+	background-size: 0 100%;
+}
+.h2_anim:hover{
+	background-size:100% 100%;
+	transition: background-size .3s;
+}
+.h2_matcha{
+	font-family: 'Playfair Display', serif, Georgia;
+	border-top:solid 1px grey;
+	margin-bottom:5%;
+	padding-top:2%;
+	display:inline-block;
+	background: linear-gradient(to top, #504D18 0%, #504D18 10%, transparent 10.01%) no-repeat;
+	background-size: 0 100%;
+}
+.h2_matcha:hover{
+	background-size:100% 100%;
+	transition: background-size .3s;
+}
+
+/** Apparence des textes **/
+.texte_intro{
+	text-align:center;
+	width:60%;
+	margin-left:20%;
+	font-style:italic;
+	font-family: 'Raleway', sans-serif, Arial;
+}
+.description{
+	font-family: 'Raleway', sans-serif, Arial;
+	line-height:1.5em;
+}
+
+/*** Section 1 : Rituel ***/
+.section1{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+.art_section1{
+	text-align:justify;
+	width:40%;
+	margin:5%;
+}
+/*** Section 2 : Gastronomie ***/
+.section2{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	background-color: #BDBCA8;
+}
+.art_section2{
+	text-align:justify;
+	width:40%;
+	margin:5%;
+}
+/** Apparence du tableau comparatif **/
+table{
+	border-collapse: separate;
+	font-family: 'Raleway', sans-serif, Arial;
+	font-size:14px;
+	margin-left:12%;
+	empty-cells: hide;
+}
+thead{
+	font-weight: bold;
+
+}
+td{
+	border:solid 1px #7C7A52;
+	text-align:center;
+	padding:2%;
+	background-color: #D3D3C5;
+}
+.td_name{
+	font-weight:bold;
+}
+
+/*** Section 3 : Un lieu ***/
+.section3{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+.art_section3{
+	text-align:justify;
+	width:40%;
+	margin:5%;
+}
+/*** Taille des images ***/
+.flower{
+	width:40%;
+	margin:5%;
+	border:solid 1px grey;
+	border-radius:3px;
+	animation: slideLeft 5s;
+	animation-delay:2s;
+}
+.matcha{
+	width:40%;
+	margin:5%;
+	border-radius:3px;
+	animation: slideRight 5s;
+	animation-delay:8s;
+}
+.fuji{
+	width:40%;
+	margin:5%;
+	border:solid 1px grey;
+	border-radius:3px;
+	animation: slideLeft 5s;
+	animation-delay:15s;
+}
+
+/***** Liens  ****/
+.link1{
+	color:lightgrey;
+	transition: color 1s;
+}
+.link1:hover{
+	color:black;
+}
+.link{
+	color:lightgrey;
+	display:inline-block; /**Permet d'appliquer un transform**/
+	transition: color 1s;
+	font-size:16px;
+	transition: font-size 1s;
+}
+.link:hover{
+	color:black;
+	font-size:18px;
+}
+/*** Création d'une animation ***/
+@keyframes slideLeft{
+
+	from{
+		transform: translateX(200px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes slideRight{
+	from{
+		transform: translateX(-200px);
+		opacity:0;
+	}
+	to{
+		transform: translateX(0);
+		opacity:1;
+	}
+}
+
+/******* Responsive ********/
+@media(max-width:980px){
+	/** Affichage en colonnes**/
+	.section1, .section3{
+		display:flex;
+		flex-direction: column;
+	}
+	.section2{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	/** Redimensionnement des images**/
+	.flower, .matcha, .fuji{
+		animation:none;
+		width:50%;
+		align-self: center;
+	}
+
+	/**Centrage des articles**/
+	.art_section1, .art_section2, .art_section3{
+		width:80%;
+		align-self:center;
+		margin: 5% 0 0 0;
+	}
+	table{
+		margin-left:28%;
+		margin-top:2%;
+	}
+	.flower, .matcha, .fuji{
+		opacity: 1;
+		-webkit-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+	}
+	.flower:hover, .matcha:hover, .fuji:hover{
+	opacity: .5;
+	}
+}
+@media (max-width:780px){
+	/** Redimensionnement de la taille des textes**/
+	h1{
+		font-size:30px;
+	}
+	.texte_intro{
+		font-size:14px;
+	}
+	.h2_anim{
+		font-size:20px;
+	}
+	.h2_matcha{
+		font-size:20px;
+	}
+	.description{
+		font-size:14px;
+	}
+	table{
+		font-size:12px;
+		align-self: center;
+	}
+	/** Affichage en colonnes**/
+	.section1, .section3{
+		display:flex;
+		flex-direction: column;
+	}
+	.section2{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	/** Redimensionnement des images**/
+	.flower,.matcha, .fuji{
+		animation:none;
+		width:50%;
+		align-self: center;
+	}
+	/**Centrage des articles**/
+	.art_section1, .art_section2, .art_section3{
+		width:80%;
+		align-self:center;
+	}
+	/**Taille des liens**/
+	.link{
+		font-size:14px;
+	}
+	.link:hover{
+		font-size:16px;
+	}
+}
+@media (max-width:500px){
+	.header_link{
+		font-size:16px;
+	}
+	.sous_lien{
+		font-size:14px;
+	}
+	.sous, .sous2{
+		width:62px;
+	}
+	.link{
+		font-size:12px;
+	}
+	.link:hover{
+		font-size:14px;
+	}
+	
+}
+
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: teal;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+footer a:hover{
+    transform: scale(1.4);
+    transition: 0.5s;
+    color: white;
+}
+footer section{
+    width: 30%;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    color:black   
+}
+
+#icon1:before{
+    content: "f";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;   
+
+}
+
+#icon2:before{
+    content: "i";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+#icon3:before{
+    content: "t";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon4:before{
+    content: "y";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon5:before{
+    content: "p";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+.socialicons{
+    padding:5%;
+}
+.socialicons:hover{
+    color: white;
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+.title-footer{
+    text-align: center;
+}
+.destination a{
+    padding: 5%;
+}
+.destination{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 40%;
+    
+}
+.subdestination{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.sublink{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 30%;
+}
+
+.sublink a{
+    width: 100%;
+}
+
+.contactus a{
+    padding: 5%;
+    margin-top: 1em;
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;  
+}
+
+@media screen and (max-width:700px){
+	footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .sublink{
+       width: 100%;
+   }
+}

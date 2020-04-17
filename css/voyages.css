@@ -1,16 +1,119 @@
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 /*FONT*/
-
-
 *{
+	margin:0;
+    padding:0;
+    
+	text-decoration:none;
+    list-style-type: none;
     box-sizing: border-box;
 }
-body{
-    margin: 0;
-    padding:0;
+
+/***** Header *****/
+.cover-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header img{
+    width: 50%;
+}
+header{
+	border-bottom:solid 1px grey;
+	font-family: 'Playfair Display', serif;
+    padding:5%;
+}
+.header_nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.header_nav a:hover{
+	color:black;
+}
+/***** Sous-menus Continents et Personnes *****/
+.sous{
+	display:none;
+    background-color: white;
+    border:solid 1px lightgrey;
+    position:absolute;
+    padding:1%;
+    width:7em;
+    height:6em;
+}
+.deroulant:hover .sous{
+	display:block;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+	color:black;
+	font-size:20px;
+}
+/***** Sous-menu imbriqué menant aux différentes pages ****/
+/**Sous-menu Amérique et Asie avec une plus petite hauteur**/
+.sous2_continents{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:4em;
+    
+}
+.deroulant2:hover .sous2_continents{
+    display:block;
+    
 }
 
+
+/** Sous-menu de l'Europe avec une plus grande hauteur**/
+.sous2_europe{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:8em;
+}
+.deroulant2:hover .sous2_europe{
+    display:block;
+}
+/** Sous-menu des pays par personne**/
+.sous2{
+    display:none;
+    margin-left:75%;
+    background-color: white;
+    position: absolute;
+    border:solid 1px lightgrey;
+    padding:10%;
+    width:7em;
+    top:20px;
+    height:6em;
+}
+.deroulant2:hover .sous2{
+    display:block;
+}
+/**** Couleur des liens ****/
+.sous_lien{
+	color:grey;
+}
+/*MAIN*/
+
+
+
+
+
+
+
+
+/* END MAIN*/
 
 
 
@@ -135,5 +238,22 @@ footer section{
     justify-items: center;
     align-items: center;  
 }
-
-
+@media screen and (max-width:700px){
+    .header_link{
+        font-size:16px;
+    }
+    .sous_lien{
+        font-size:14px;
+    }
+    .sous, .sous2{
+        width:5em;
+        height:5em;
+}
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .sublink{
+       width: 100%;
+   }

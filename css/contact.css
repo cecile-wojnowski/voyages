@@ -5,6 +5,10 @@
 
 *{
     box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
     text-decoration:none;
     list-style-type: none;
     margin: 0;
@@ -188,7 +192,11 @@ p {
     }
 }
 
+<<<<<<< HEAD
+/****** FOOTER *****/
+=======
 /*FOOTER*/
+>>>>>>> Céline
 footer{
     display: flex;
     flex-direction: row;
@@ -308,4 +316,10 @@ footer section{
     flex-direction: column;
     justify-items: center;
     align-items: center;  
+<<<<<<< HEAD
 }
+
+
+=======
+}
+>>>>>>> Céline

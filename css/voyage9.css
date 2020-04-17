@@ -181,6 +181,11 @@ header{
   width: 100%;
 }
 
+#album1 div {
+    width: 90%;
+    margin: auto;
+}
+
 .phot1-img {
     width: 10%;
 }
@@ -203,10 +208,8 @@ header{
     grid-row-gap: 0px;
 }
 
-
 .div1 ,.div2  ,.div3,.div4 ,.div5  {
-    width: 100%; 
-    
+    width: 100%;  
 }
 
 .div1 { 
@@ -219,22 +222,23 @@ header{
     grid-row-start: 3 ;
     grid-row-end: 5;
     grid-column-start: 1 ;
-    grid-column-end:3;
-    
-    
+    grid-column-end:3;   
 }
+
 .div3 { 
     grid-row-start: 1 ;
     grid-row-end: 5;
     grid-column-start: 3 ;
     grid-column-end:5;
 }
+
 .div4 { 
     grid-row-start: 1 ;
     grid-row-end: 3;
     grid-column-start: 5 ;
     grid-column-end:7;
 }
+
 .div5 { 
     grid-row-start: 3 ;
     grid-row-end: 5;

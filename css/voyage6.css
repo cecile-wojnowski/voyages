@@ -1,1 +1,314 @@
-voyage6.css
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*FONT*/
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+/***** Header *****/
+header{
+	border-bottom:solid 1px grey;
+	font-family: 'Playfair Display', serif;
+	padding:5%;
+}
+.header_nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.header_ul{
+	display:table;
+}
+.header_nav .sous_lien{
+	display:block;
+}
+.header_nav a:hover{
+	color:black;
+}
+/***** Sous-menus Continents et Personnes *****/
+.sous{
+	display:none;
+}
+.deroulant:hover .sous{
+	display:block;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+	color:black;
+	font-size:20px;
+}
+/***** Sous-menu imbriqué menant aux différentes pages ****/
+.sous2{
+	display:none;
+	margin-left:60%;
+}
+.deroulant2:hover .sous2{
+	display:block;
+}
+/**** Couleur des liens ****/
+.sous_lien{
+	color:grey;
+}
+
+/*MAIN*/
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2{
+    text-align: center;
+    padding: 1em;
+}
+@keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 1.5s;
+  }
+.city{
+    width: 100%;
+    padding: 2%;
+    
+}
+.content{
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+.content img{
+    width: 100%;
+}
+.image{
+    width: 50%;
+    padding:1em
+}
+.description{
+    width: 50%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+}
+.plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    
+}
+.card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    text-align: center; 
+    transition: 0.5s;
+    
+}
+.card img{
+    width: 100%;
+}
+.card h2{
+    color: white;
+    background: black;
+    width: 100%;
+    
+    
+    
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.card:hover img{
+    transform: rotate(5deg);
+
+
+}
+.description-plan{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+iframe{
+    padding-left: 5%;
+    padding-bottom: 5%;
+    margin: 2%;
+}
+table{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    margin:2% 2%;
+    
+    
+
+}
+td{
+    padding-left: 2%;
+}
+.table-content{
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+.flipping-icon{
+    transition: 1s;
+}
+.flipping-icon:hover{
+    transform: rotate(360deg);
+}
+@media screen and (max-width:600px){
+    .content, .plan, .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+    }
+    .card{
+        margin-bottom: 3%;
+        width: 50%;
+    }
+    
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: teal;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+footer a:hover{
+    transform: scale(1.4);
+    transition: 0.5s;
+    color: white;
+}
+footer section{
+    width: 30%;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    color:black   
+}
+
+#icon1:before{
+    content: "f";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;   
+
+}
+
+#icon2:before{
+    content: "i";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+#icon3:before{
+    content: "t";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon4:before{
+    content: "y";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#icon5:before{
+    content: "p";
+    font-family: 'fontello';
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+.socialicons{
+    padding:5%;
+}
+.socialicons:hover{
+    color: white;
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+.title-footer{
+    text-align: center;
+}
+.destination a{
+    padding: 5%;
+}
+.destination{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 40%;
+    
+}
+.subdestination{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.sublink{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 30%;
+}
+
+.sublink a{
+    width: 100%;
+}
+
+.contactus a{
+    padding: 5%;
+    margin-top: 1em;
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;  
+}
