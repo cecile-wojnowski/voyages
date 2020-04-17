@@ -401,7 +401,8 @@ td{
 		font-size:14px;
 	}
 	.sous, .sous2{
-		width:62px;
+		width:5em;
+		height:5em;
 	}
 	.link{
 		font-size:12px;
