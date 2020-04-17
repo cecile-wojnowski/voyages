@@ -152,29 +152,7 @@ header{
 
 
 
-/**** a voir ***/
-table {
-  margin: 3% 0;
-  padding: 1% 0;
-  background-color: #002053;
-}
 
-table img {
-    max-width: 95%;
-    padding: 0.5%;
-    border: solid black 1PX;
-    background-color: white;
-}
-
-table td {
-    width: 15%;
-    vertical-align: text-top;  
-}
-
-table p {
-    color: white;
-}
-/**************************/
 
 
 
@@ -274,6 +252,29 @@ table p {
     grid-column-end:7;
 }
 
+/****** TABLEAU ******/
+
+table {
+    margin: 3% 0;
+    padding: 1% 0;
+    background-color: #002053;
+}
+  
+table img {
+    max-width: 95%;
+    padding: 0.5%;
+    border: solid black 1PX;
+    background-color: white;
+}
+  
+table td {
+    width: 15%;
+    vertical-align: text-top;  
+}
+  
+table p {
+    color: white;
+}
 
 #album2 p {
     width: 70%;
@@ -291,6 +292,7 @@ table p {
 .img1 , .img2, .img3 , .img4 , .img5 , .img6 {
     width: 100%;
 }
+
 
 /****** GRID 2 ******/
 .grid {
