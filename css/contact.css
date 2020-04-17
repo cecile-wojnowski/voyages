@@ -9,16 +9,64 @@
 
 body {
     max-width: 1400px;
+    text-decoration:none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #d4ebf1;
 }
 
+body {
+    max-width: 1400px;
+}
+header{
+	border-bottom:solid 1px grey;
+	font-family: 'Playfair Display', serif;
+	padding:5%;
+}
+.header_nav{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.header_ul{
+	display:table;
+}
+.header_nav .sous_lien{
+	display:block;
+}
+.header_nav a:hover{
+	color:black;
+}
+/***** Sous-menus Continents et Personnes *****/
+.sous{
+	display:none;
+}
+.deroulant:hover .sous{
+	display:block;
+}
+/**** Liens Continents et Personnes ****/
+.header_link{
+	color:black;
+	font-size:20px;
+}
+/***** Sous-menu imbriqué menant aux différentes pages ****/
+.sous2{
+	display:none;
+	margin-left:60%;
+}
+.deroulant2:hover .sous2{
+	display:block;
+}
+/**** Couleur des liens ****/
+.sous_lien{
+	color:grey;
+}
+
+/***** MAIN ******/
+
 main {
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    box-shadow: 8px 8px 8px #a8ced7;
+    padding: 2%;
+    background-color: #d9ecf0;
 }
 
 h1 {
@@ -144,7 +192,11 @@ p {
     }
 }
 
+<<<<<<< HEAD
 /****** FOOTER *****/
+=======
+/*FOOTER*/
+>>>>>>> Céline
 footer{
     display: flex;
     flex-direction: row;
@@ -264,6 +316,10 @@ footer section{
     flex-direction: column;
     justify-items: center;
     align-items: center;  
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> Céline
