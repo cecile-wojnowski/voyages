@@ -506,7 +506,7 @@ footer section{
     .sous, .sous2{
         width:5em;
         height:5em;
-}
+	}
     footer{
         display: flex;
         flex-direction: column;
@@ -515,7 +515,7 @@ footer section{
    .sublink{
        width: 100%;
    }
-
+}
 
 
 

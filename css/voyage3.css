@@ -524,7 +524,17 @@ footer section{
     align-items: center;  
 }
 @media screen and (max-width:700px){
-	footer{
+    .header_link{
+        font-size:16px;
+    }
+    .sous_lien{
+        font-size:14px;
+    }
+    .sous, .sous2{
+        width:5em;
+        height:5em;
+	}
+    footer{
         display: flex;
         flex-direction: column;
         align-items: center;
