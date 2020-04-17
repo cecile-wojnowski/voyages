@@ -107,6 +107,7 @@ header{
 }
 body {
     max-width: 1400px;
+    margin: auto;
     text-align: center;
 }
 
